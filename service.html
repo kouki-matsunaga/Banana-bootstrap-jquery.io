@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Service - 株式会社バナナデザイン</title>
+  <link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./service.css">
+  <link rel="stylesheet" href="./setting.css">
+  <link rel="stylesheet" href="./dlmenu.css">
+</head>
+<body>
+    <!-- ----------navbar------------- -->
+  <nav class="top-nav top-nav--service">
+    <ul>
+      <li class="logo">
+        <a href="./index.html" class="nav-logo"><img src="img/logo.png"></a>
+      </li>
+      <li class="list-border"></li>
+      <li>
+        <a href="./index.html" class="nav-link">ホーム</a>
+      </li>
+      <li class="list-border"></li>
+      <li>
+        <a href="./about.html" class="nav-link">組織概要</a>
+      </li>
+      <li class="list-border"></li>
+      <li>
+        <a href="./service.html" class="nav-link active">事業内容</a>
+      </li>
+      <li class="list-border"></li>
+      <li>
+        <a href="./bootstrap.html" class="nav-link">BootStrap</a>
+      </li>
+      <li class="list-border"></li>
+      <li>
+        <div id="dl-menu" class="dl-menuwrapper">
+          <button class="dl-trigger">Open Menu</button>
+          <ul class="dl-menu">
+            <li>
+              <a href="./index.html" class="home dl-link active">ホーム</a>
+            </li>
+            <li>
+              <a href="./about.html" class="about dl-link">組織概要</a>
+            </li>
+            <li>
+              <a href="./service.html" class="service dl-link">事業内容</a>
+            </li>
+            <li>
+              <a href="./bootstrap.html" class="bt dl-link">BootStrap</a>
+            </li>
+          </ul>
+        </div>
+      </li>
+      <div class="clear"></div>
+    </ul>
+  </nav>
+  <!-- ----------------------------- -->
+
+  <!-- ---------sub-header---------- -->
+  <div class="sub-header">
+    <div class="content">
+      <h1>事業内容</h1>
+    </div>
+  </div>
+  <!-- ----------------------------- -->
+
+  <div class="main-content">
+    <div class="content">
+      <div class="left-content sidebar">
+        <!-- ---------sidebar---------- -->
+        <div class="side">
+          <ul>
+            <li>
+              <a href="#service" class="side-link">
+                <img src="img/banana.png" width="20">
+                事業内容
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- -------------------------- -->
+      </div>
+      <div class="right-content main">
+
+        <!-- ----------service-------- -->
+        <div class="box box-large service" id="service">
+          <div class="title-back">
+            <h2 class="title">事業内容</h2>
+          </div>
+          <div class="box-content">
+            <h3>おもなサービス</h3>
+            <p class="sp-on">＊画像をタップして拡大</p>
+            <div class="media">
+              <div class="image" data-toggle="modal" data-target="#myModal"><img id="tooltip" data-toggle="tooltip" data-placement="top" title="画像を拡大表示する" src="img/service.png"></div>
+              <div class="media-content">
+                <div class="service-name">
+                  BANANA
+                </div>
+                <p>
+                  BANANAは我社が展開するファッションブランド。
+                  <br>
+                  バナナのグッズも多数販売しております。
+                </p>
+              </div>
+            </div>
+            <div class="clear"></div>
+          </div>
+        </div>
+        <!-- -------------------------- -->
+
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">バナナＴシャツ</h4>
+              </div>
+              <div class="modal-body">
+                <div class="thumbnail"><img src="img/service.png"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="clear"></div>
+    </div>
+  </div>
+
+  <!-- ----------footer----------- -->
+  <div class="footer">
+    <div class="content">
+      <div class="footer-info">
+        <strong>会社情報</strong>
+        <div class="info">株式会社バナナデザイン</div>
+        <div class="clear"></div>
+      </div>
+      <div class="footer-info">
+        <strong>所在地</strong>
+        <div class="info">東京都渋谷区神泉町8-16 渋谷ファーストプレイス</div>
+        <div class="clear"></div>
+      </div>
+      <div class="footer-info">
+        <strong>E-Mail</strong>
+        <div class="info">banana@banana.co.jp</div>
+        <div class="clear"></div>
+      </div>
+      <div class="copyright">
+        ©2014 Banana Inc. ALL Rights Reserved.
+      </div>
+    </div>
+  </div>
+  <!-- ----------------------------- -->
+  <script src="./js/jquery-2.1.1.min.js"></script>
+  <script src="./js/modernizr.custom.js"></script>
+  <script src="./js/jquery.dlmenu.js"></script>
+  <script type="text/javascript">
+    var $d = jQuery.noConflict();
+    $d(function() {
+      $d( '#dl-menu' ).dlmenu();
+    });
+  </script>
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="./bootstrap/js/bootstrap.min.js"></script>
+  <script>
+    var $s = jQuery.noConflict();
+    if(!navigator.userAgent.match(/(iPhone|Android|iPad)/)){
+    $s(function(){
+      $s('#tooltip').tooltip();
+      $s('#tooltip').click(function(){$s(this).tooltip('hide')});
+    });
+    }
+  </script>
+</body>
+</html>
